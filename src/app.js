@@ -1,7 +1,5 @@
 
 function submitForm() {
-    console.log("Hello")
-    const form = document.getElementsByTagName('contactForm')[0];
     const user_lname = document.getElementById('lname').value;
     const user_fname= document.getElementById('fname').value;
     const user_email= document.getElementById('email').value;
