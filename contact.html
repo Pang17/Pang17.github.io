@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
+    ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="src/app.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_WreQvaCyZaZGM1ep82vAr");
+        })();
+    </script>
+</head>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="https://Psy1ALise.github.io">Previous</a>
+    <a href="https://pang17.github.io/">Github version of website</a>
+    <a href="https://hpatell.github.io">Next</a>
+    <a href="aboutMe.html">About Me</a>
+    <a class="active" href="contact.html">Contact Me</a>
+</div>
+
+<div class="container">
+    <form contactForm>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="user_lname" placeholder="Last name">
+        <div id="lnameMsg" style="color:Red;display:none">Last Name Cannot Be Empty</div><br />
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="user_fname" placeholder="First name">
+        <div id="fnameMsg" style="color:Red;display:none">First Name Cannot Be Empty</div><br />
+
+        <label for="lname">Email Address</label>
+        <input type="text" id="email" name="user_email" placeholder="Email">
+        <div id="emailMsg" style="color:Red;display:none">Invalid Email</div><br />
+
+        <label for="lname">Phone Number</label>
+        <input type="text" id="phone" name="user_phone" placeholder="Phone Number">
+        <div id="phoneMsg" style="color:Red;display:none">Invalid Number</div><br />
+
+        <label for="subject">Message</label>
+        <textarea id="msg" name="user_message" placeholder="Write something.." style="height:200px"></textarea>
+        <div id="messageMsg" style="color:Red;display:none">Message Cannot Be Empty</div><br />
+
+        <button type="button" class="btn" onclick="submitForm()">Submit</button>
+        <div id="doneMsg" style="color:#04AA6D;display:none">Thank you! Submission Successful</div><br />
+
+    </form>
+</div>
+
+</html>
