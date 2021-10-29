@@ -2,21 +2,26 @@
 <html>
 
 <head>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
-    ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <title>
-    
+
 </title>
 
 <div class="navbar">
-    <a class="active" href="#home">Home</a>
-    <a href="https://Psy1ALise.github.io">Previous</a>
-    <a href="https://pang17.github.io/">Github version of website</a>
-    <a href="https://hpatell.github.io">Next</a>
-    <a href="aboutMe.html">About Me</a>
-    <a href="contact.html">Contact Me</a>
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <div class="dropdown">
+        <button class="dropbtn">Class Links
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="https://Psy1ALise.github.io">Previous</a>
+            <a href="https://pang17.github.io/">Github version of website</a>
+            <a href="https://hpatell.github.io">Next</a>
+        </div>
+    </div>
 </div>
 
 <body>
@@ -28,12 +33,70 @@
         Personal Web Page 1
         mpang@udel.edu
         -->
+    <div class="aboutme">
+        <div style="float: left;">
+            <img src="Images/self.png" alt="Picture of self" width="350" height="350" />
+        </div>
 
-    <div class="center">
-        <img src="Images/IMG_0080.jpg" alt="Picture of self" width="259" height="391" />
+        <div class="aboutMeText" style="float: right; padding-left: 50px;">
+            <h2>About Me</h2>
+            I am a senior Computer Science major at the University of Delaware with a concentration in game design.
+            I have always had a passion for video games, and after I graduate I hope to find a job in the video game
+            industry.
+            My other hobbies include hockey and golf.
+            <h3>Skills</h3>
+            <ul>
+                <li>C++/C</li>
+                <li>Java</li>
+                <li>Javascript</li>
+                <li>HTML and CSS</li>
+                <li>Python</li>
+                <li>SQL</li>
+            </ul>
+        </div>
     </div>
-    <div class="center">
-        Welcome to my personal website for CISC474: Advanced Web Technologies
+
+    <div class="portfolio">
+        <div>
+            <h3>Construction Crew Educational Game</h3>
+            <p>
+                Educational game made with Javascript, HTML, and Phaser, a 2D game framework.
+            </p>
+            <button class="button" onclick="window.location.href='https://github.com/Spring-2021-CISC374/construction_crew';">
+               Github
+            </button>
+        </div>
+        <div>
+            <h3>Interactive Stock Trading Website</h3>
+            <p>
+                Fully interactive stock trading website
+            </p>
+            <button class="button" onclick="window.location.href='https://github.com/NoahHodgson/CISC474-stocks4me';">
+                Github
+            </button>
+
+        </div>
+        <div>
+            <h3>UDP Network Socket</h3>
+            <p>
+                Fully functional UDP client-server communication
+            </p>
+            <button class="button" onclick="window.location.href='https://github.com/camfrey/net_sock';">
+               Github
+            </button>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>
+            <a href="www.linkedin.com/in/matthew-pangilinan-b57473170" target="_blank">
+                <img src="Images/li.png" width="30" height="auto">
+            </a>
+            <a href="www.linkedin.com/in/matthew-pangilinan-b57473170" target="_blank">
+                <img src="Images/li.png" width="30" height="auto">
+            </a>
+        </p>
     </div>
 
 </body>

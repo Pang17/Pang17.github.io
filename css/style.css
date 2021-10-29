@@ -1,80 +1,164 @@
-.navbar {
-    background-color: rgb(65, 63, 192);
-    overflow: hidden;
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  
+  /* color definitions */
+  --light: #f1faee;
+  --darkblue: #1d3557;
+  --lightblue: #a8dadc;
+  --blue: #457b9d;
+  --red: #e63946;
+  
+  /* body colors */
+  background-color: var(--light);
+  color: var(--darkblue);
+  
+  /* header colors */
+  --header-background-color: var(--blue); 
+  --header-text-color: var(--light);
+  
+  /* UI Element Colors */
+  --element-highlight-color: var(--blue);
+  --content-background-color: var(--light);
+  --content-text-color: var(--dark);
+  --element-negative-color: var(--red);
+  --element-positive-color: var(--darkblue);
+  
+  margin:0;
+
 }
-  
-  /* Style the links inside the navigation bar */
-  .navbar a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .navbar a:hover {
-    background-color: rgb(177, 172, 226);
-    color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  .navbar a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
+
+/* Navbar container */
+.navbar {
+  background-color: #1d3557;
+  font-family: Arial;
+  overflow: hidden;
+  border-bottom: 5px solid #457b9d;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: #f1faee;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: #f1faee;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #457b9d;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1faee;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #1d3557;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #a8dadc;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 .center {
-    margin: auto;
-    display: block;
-    text-align: center
-  }
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 h1 {
-    text-align:center;
+  text-align:center;
 }
-/* Found from w3 schools
- * https://www.w3schools.com/howto/howto_css_contact_form.asp
-*/
-input[type=text], select, textarea {
-    padding-top: 25px;
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  .btn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  .btn:hover {
-    background-color: #45a049;
-  }
-  
-  /* Add a background color and some padding around the form */
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
 
-  input:invalid {
-    box-shadow: 0 0 5px 1px red;
-  }
-  
-  input:focus:invalid {
-    box-shadow: none;
-  }
+.aboutme{
+  display:inline-flex;
+  padding-top: 50px;
+  padding-right: 60px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  border-bottom: 5px solid #457b9d;
+}
+
+.aboutMeText {
+  inline-size: 900px;
+  overflow-wrap: break-word;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #1d3557;
+  color: white;
+  text-align: center;
+  border-top: 5px solid #457b9d;
+  overflow: hidden;
+}
+
+.portfolio {
+  display:inline-flex; 
+  flex-direction: row; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  padding-left:100px;
+  padding-right:100px;
+  text-align: center;
+}
+
+.button {
+  background-color: #1d3557;
+  border: none;
+  color: #f1faee;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button:hover {
+  background-color: #457b9d; /* Green */
+  color: #f1faee;
+}
