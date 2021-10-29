@@ -6,7 +6,6 @@ body{
   --darkblue: #1d3557;
   --lightblue: #a8dadc;
   --blue: #457b9d;
-  --red: #e63946;
   
   /* body colors */
   background-color: var(--light);
